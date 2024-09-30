@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Temperamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container">
+        <h1>Teste de Temperamento</h1>
+        
+        <div id="instructions">
+            <h2>Instruções</h2>
+            <ul>
+                <li>Este teste consiste em duas partes: a primeira para determinar se o Temperamento é quente ou frio; a segunda para determinar úmido ou seco.</li>
+                <li>Não existe temperamento melhor ou pior, portanto, evite manipular suas respostas para obter um resultado específico.</li>
+                <li>Você deve marcar entre "A" e "B".</li>
+            </ul>
+            <div class="image-placeholder">
+                <img src="https://yt3.googleusercontent.com/o4f-6r3nQVHE0TFqEN0Oxv1ZlV-SJcALMbXTEm7mDnXCfj9UJQX1ku6QAeENPR5SgIZ3EHWdvJE=s900-c-k-c0x00ffffff-no-rj" alt="Imagem Representativa" style="width:100%; border-radius: 10px;">
+            </div>
+            <p>Site criado por Matheus Almeida</p>
+            <button id="start-part1">Iniciar Primeira Parte</button>
+        </div>
+
+        <div id="part1" class="hidden">
+            <h2>Primeira Parte - 19 Questões</h2>
+            <div id="questions-part1">
+                <div class="question">
+                    1. <br>
+                    a - <input type="radio" name="q1" value="A" required> Quando você está em um ambiente novo, você tende a explorá-lo completamente.<br>
+                    b - <input type="radio" name="q1" value="B"> Tende a ser receoso em novos ambientes.
+                </div>
+                <div class="question">
+                    2. <br>
+                    a - <input type="radio" name="q2" value="A" required> Quando alguém lhe ofende de forma inesperada, você já tem uma resposta.<br>
+                    b - <input type="radio" name="q2" value="B"> Não reage rapidamente às ofensas inesperadas.
+                </div>
+                <div class="question">
+                    3. <br>
+                    a - <input type="radio" name="q3" value="A" required> Para você, é muito fácil emitir sua opinião em meio a um grupo de “semi-conhecidos”.<br>
+                    b - <input type="radio" name="q3" value="B"> Não consegue elaborar uma opinião sem se sentir muito seguro antes.
+                </div>
+                <div class="question">
+                    4. <br>
+                    a - <input type="radio" name="q4" value="A" required> Para você, a comunicação e a oportunidade de se posicionar são imprescindíveis.<br>
+                    b - <input type="radio" name="q4" value="B"> Você suporta por um bom tempo quando não pode se posicionar.
+                </div>
+                <div class="question">
+                    5. <br>
+                    a - <input type="radio" name="q5" value="A" required> É muito fácil tomar uma atitude em ações em grupo.<br>
+                    b - <input type="radio" name="q5" value="B"> Possui dificuldades em tomar decisões em meio a um grupo.
+                </div>
+                <div class="question">
+                    6. <br>
+                    a - <input type="radio" name="q6" value="A" required> Você é o primeiro a se manifestar em dinâmicas de grupo.<br>
+                    b - <input type="radio" name="q6" value="B"> Você espera que outro dê o primeiro passo em dinâmicas de grupo.
+                </div>
+                <div class="question">
+                    7. <br>
+                    a - <input type="radio" name="q7" value="A" required> Você se sente desconfortável vivendo apenas o óbvio e o previsível.<br>
+                    b - <input type="radio" name="q7" value="B"> Para você, uma vida previsível e estável é mais confortável.
+                </div>
+                <div class="question">
+                    8. <br>
+                    a - <input type="radio" name="q8" value="A" required> Você possui um tom de voz elevado.<br>
+                    b - <input type="radio" name="q8" value="B"> Seu tom de voz é mais manso/vacilante/baixo.
+                </div>
+                <div class="question">
+                    9. <br>
+                    a - <input type="radio" name="q9" value="A" required> Você precisa se expressar constantemente.<br>
+                    b - <input type="radio" name="q9" value="B"> Se expressar constantemente lhe cansa muito.
+                </div>
+                <div class="question">
+                    10. <br>
+                    a - <input type="radio" name="q10" value="A" required> É muito difícil guardar para si quando não gosta de algo; logo fala.<br>
+                    b - <input type="radio" name="q10" value="B"> Não tem certeza de como se expressar de imediato se não gostar de algo.
+                </div>
+                <div class="question">
+                    11. <br>
+                    a - <input type="radio" name="q11" value="A" required> Não tem problema nenhum em ter assunto com as pessoas.<br>
+                    b - <input type="radio" name="q11" value="B"> Tem dificuldade em ter assunto com as pessoas.
+                </div>
+                <div class="question">
+                    12. <br>
+                    a - <input type="radio" name="q12" value="A" required> É considerado uma pessoa agitada.<br>
+                    b - <input type="radio" name="q12" value="B"> Te veem como calmo ou lento.
+                </div>
+                <div class="question">
+                    13. <br>
+                    a - <input type="radio" name="q13" value="A" required> Quer resolver tudo para ontem e agita os que o cercam com sua agitação.<br>
+                    b - <input type="radio" name="q13" value="B"> Tem paciência para resolver ou, se está ansioso, não agita os outros.
+                </div>
+                <div class="question">
+                    14. <br>
+                    a - <input type="radio" name="q14" value="A" required> Sente que faz muito esforço para não ser precipitado.<br>
+                    b - <input type="radio" name="q14" value="B"> Sente que faz muito esforço para tomar decisões mais rápidas, pensando menos.
+                </div>
+                <div class="question">
+                    15. <br>
+                    a - <input type="radio" name="q15" value="A" required> Tende a tirar conclusões rápidas sem pensar muito.<br>
+                    b - <input type="radio" name="q15" value="B"> Tende a pensar demais para enfim chegar a uma conclusão.
+                </div>
+                <div class="question">
+                    16. <br>
+                    a - <input type="radio" name="q16" value="A" required> Sua presença não passa despercebida.<br>
+                    b - <input type="radio" name="q16" value="B"> Sua presença é naturalmente mais contida.
+                </div>
+                <div class="question">
+                    17. <br>
+                    a - <input type="radio" name="q17" value="A" required> Por você, a vida seria aventura constante e imprevisível.<br>
+                    b - <input type="radio" name="q17" value="B"> Por você, a vida seria previsível e totalmente segura sem desafios ou mudanças repentinas.
+                </div>
+                <div class="question">
+                    18. <br>
+                    a - <input type="radio" name="q18" value="A" required> Você tem muita facilidade em lidar com coisas, pessoas e situações.<br>
+                    b - <input type="radio" name="q18" value="B"> Você se sente mais confortável dentro de si, com seus pensamentos e emoções.
+                </div>
+                <div class="question">
+                    19. <br>
+                    a - <input type="radio" name="q19" value="A" required> Novidades e desafios constantes renovam seu ânimo.<br>
+                    b - <input type="radio" name="q19" value="B"> Novidades e desafios constantes lhe deixam ansioso ou cansado.
+                </div>
+            </div>
+            <button id="submit-part1">Enviar Respostas da Primeira Parte</button>
+        </div>
+
+        <div id="part2" class="hidden">
+            <h2>Segunda Parte - 13 Questões</h2>
+            <div id="questions-part2">
+                <div class="question">
+                    1. <br>
+                    a - <input type="radio" name="q1" value="A" required> Você tem uma visão muito flexível sobre a vida.<br>
+                    b - <input type="radio" name="q1" value="B"> Para você, a vida tem certos e errados muito marcados.
+                </div>
+                <div class="question">
+                    2. <br>
+                    a - <input type="radio" name="q2" value="A" required> Você se adapta com muita facilidade a novas coisas, pessoas e situações.<br>
+                    b - <input type="radio" name="q2" value="B"> Você possui certa dificuldade com novidades e mudanças.
+                </div>
+                <div class="question">
+                    3. <br>
+                    a - <input type="radio" name="q3" value="A" required> Você gosta de mudanças e inovações constantes.<br>
+                    b - <input type="radio" name="q3" value="B"> Você não gosta de mudanças inesperadas.
+                </div>
+                <div class="question">
+                    4. <br>
+                    a - <input type="radio" name="q4" value="A" required> Você se sente bem quando as coisas acontecem de forma rápida e sem planejamento.<br>
+                    b - <input type="radio" name="q4" value="B"> Você prefere que as coisas aconteçam de forma planejada e controlada.
+                </div>
+                <div class="question">
+                    5. <br>
+                    a - <input type="radio" name="q5" value="A" required> Você tende a analisar as coisas de forma muito profunda e reflexiva.<br>
+                    b - <input type="radio" name="q5" value="B"> Você tende a agir sem pensar muito.
+                </div>
+                <div class="question">
+                    6. <br>
+                    a - <input type="radio" name="q6" value="A" required> Você é uma pessoa muito observadora e analítica.<br>
+                    b - <input type="radio" name="q6" value="B"> Você age mais pelo instinto do que pela análise.
+                </div>
+                <div class="question">
+                    7. <br>
+                    a - <input type="radio" name="q7" value="A" required> Você se sente confortável em liderar e organizar.<br>
+                    b - <input type="radio" name="q7" value="B"> Você prefere seguir do que liderar.
+                </div>
+                <div class="question">
+                    8. <br>
+                    a - <input type="radio" name="q8" value="A" required> Você é uma pessoa que busca sempre a perfeição e a excelência.<br>
+                    b - <input type="radio" name="q8" value="B"> Você se sente bem com as coisas como estão, sem necessidade de mudanças constantes.
+                </div>
+                <div class="question">
+                    9. <br>
+                    a - <input type="radio" name="q9" value="A" required> Você tende a se preocupar muito com o que os outros pensam.<br>
+                    b - <input type="radio" name="q9" value="B"> Você não se preocupa tanto com a opinião alheia.
+                </div>
+                <div class="question">
+                    10. <br>
+                    a - <input type="radio" name="q10" value="A" required> Você é muito empático e sensível às emoções dos outros.<br>
+                    b - <input type="radio" name="q10" value="B"> Você tende a ser mais racional em suas decisões.
+                </div>
+                <div class="question">
+                    11. <br>
+                    a - <input type="radio" name="q11" value="A" required> Você tem uma grande necessidade de ser aceito e aprovado pelos outros.<br>
+                    b - <input type="radio" name="q11" value="B"> Você se sente seguro consigo mesmo, independente da opinião dos outros.
+                </div>
+                <div class="question">
+                    12. <br>
+                    a - <input type="radio" name="q12" value="A" required> Você é alguém que busca a harmonia nas relações.<br>
+                    b - <input type="radio" name="q12" value="B"> Você não se preocupa tanto em agradar a todos.
+                </div>
+                <div class="question">
+                    13. <br>
+                    a - <input type="radio" name="q13" value="A" required> Você tende a ser otimista e confiante no futuro.<br>
+                    b - <input type="radio" name="q13" value="B"> Você tende a ser mais pessimista e cético em relação ao futuro.
+                </div>
+            </div>
+            <button id="submit-part2">Enviar Respostas da Segunda Parte</button>
+        </div>
+
+        <div id="results" class="hidden">
+            <h2>Resultado</h2>
+            <p id="result-part1"></p>
+            <p id="result-part2"></p>
+            <div id="temperament-description" class="temperament"></div>
+            <button id="restart">Reiniciar Teste</button>
+        </div>
+
+        <footer>
+            <p>CRIAÇÃO POR RUTH GOMES E LUÍS GOMES</p>
+            <p>Instagram: <a href="https://instagram.com/TEMPERAMENTANDO.OFICIAL" target="_blank">@TEMPERAMENTANDO.OFICIAL</a></p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
